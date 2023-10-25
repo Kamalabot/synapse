@@ -14,7 +14,7 @@ if [ "$VIRTUAL_ENV" = "" ]; then
 fi
 
 # Create servers which listen on HTTP at 808x and HTTPS at 848x.
-for port in 8080 8081 8082; do
+for port in 8080; do
     echo "Starting server on port $port... "
 
     https_port=$((port + 400))
